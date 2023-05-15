@@ -1,0 +1,715 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* CSS Reset */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    transition: .2s linear;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+}
+
+/* ---------- For Element in CENTER ---------
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%); 
+
+*/
+
+/* ----------- font-families ----------- 
+
+font-family: 'Caveat', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(#2b2b2b, #000000)no-repeat;
+    /* min-width: 300px; */
+}
+
+section,
+.padding {
+    padding: 2rem 7%;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* header -------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 7%;
+    color: white;
+}
+
+.logo h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.logo h2:hover {
+    transform: scale(1.05);
+}
+
+.contact-no {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffaf12;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+}
+
+.contact-no i {
+    color: black;
+}
+
+.contact-no:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffaf12;
+}
+
+.contact-no:hover i {
+    color: white;
+}
+
+/* homepage ----------- */
+.homepage {
+    background: url(images/front-view-beautiful-dog-with-copy-space\ \(1\).jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    color: white;
+}
+
+.homepage-content {
+    position: absolute;
+    top: 25%;
+}
+
+.homepage-content h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 800;
+}
+
+.homepage-content h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px #000000;
+}
+
+.homepage-content a {
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+.homepage-content h3 {
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    line-height: 2;
+}
+
+.homepage-content a i {
+    margin-right: .5rem;
+    color: #000000;
+}
+
+.homepage-content li a:hover,
+.homepage-content li a:hover i {
+    color: white;
+}
+
+.homepage-content>a {
+    background-color: white;
+    padding: .2rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+    margin-top: .7rem;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.homepage-content>a:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px rgb(255, 255, 255);
+}
+
+
+/* 4boxes ----------- */
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 1rem;
+    position: absolute;
+    top: 490px;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    padding: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+.box:hover {
+    background-color: #ffaf12;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.trusted {
+    padding: 1rem 2.1rem;
+}
+
+.box i {
+    color: black;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.box h4 {
+    color: black;
+    font-weight: 600;
+}
+
+/* our methods ---------- */
+.our-methods h2 {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+}
+
+.method-container {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-box {
+    position: relative;
+}
+
+.method-box::before {
+    border-radius: 40px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.method-image img {
+    border-radius: 40px;
+    height: 55vh;
+    box-shadow: 5px 1px 1px rgb(255, 255, 255);
+}
+
+.method-box-content {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.method-box-content h3 {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: .5rem;
+}
+
+.method-box-content button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.method-box-content button a {
+    cursor: pointer;
+    color: black;
+    padding: .5rem 1rem;
+}
+
+.method-box-content button:hover {
+    background-color: #ffaf12;
+}
+
+/* obedience-point */
+.obedience-point {
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin: 0rem 7%;
+}
+
+.obedience-point img {
+    height: 50vh;
+    margin: auto;
+}
+
+.obedience-point p {
+    font-size: 1.5rem;
+    color: #ffaf12;
+}
+
+/* call-section */
+.call-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+
+.call-text p {
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* 2 callups --------- */
+.callups {
+    color: white;
+    border-top: 1px solid white;
+    margin: 0rem 7%;
+    padding: 7rem 0%;
+}
+
+.callup-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.callup-text {
+    flex: 1;
+}
+
+.callup-image {
+    flex: 1;
+
+}
+
+.callup-text h2 {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.callup-text p {
+    line-height: 2;
+}
+
+.consultation {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color: #ffaf12;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1.5px solid transparent;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.consultation:hover {
+    color: white;
+    background: transparent;
+    background: black;
+    border: 1.5px solid #ffaf12;
+}
+
+.container-2 {
+    margin-top: 7rem;
+    margin-bottom: -3rem;
+}
+
+/* testimonials */
+.testimonials>h2 {
+    font-size: 2rem;
+    color: #ffaf12;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.testimonial-box {
+    background-color: white;
+    padding: 1rem;
+}
+
+.black-box {
+    background-color: #000000;
+    color: white;
+}
+
+.testimonial-box>i {
+    font-size: 2rem;
+}
+
+.testimonial-box p {
+    margin-bottom: 1rem;
+}
+
+.client {
+    object-fit: cover;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.testimonial-box h3 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.stars {
+    text-align: center;
+}
+
+/* popup -------- */
+.popup {
+    background-color: #ffaf12;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    z-index: 2;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    max-height: 100%;
+}
+
+.popup::-webkit-scrollbar {
+    display: none;
+}
+
+body.modalopen {
+    overflow: hidden;
+}
+
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.popup>div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.left img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+#removepopup {
+    background: black;
+    color: white;
+    padding: .1rem .7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40vw;
+}
+
+form input {
+    padding: .9rem .5rem;
+}
+
+form textarea {
+    padding: .5rem;
+    resize: vertical;
+}
+
+#submit {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #2b2b2b;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    position: fixed;
+    width: 120vw;
+    height: 120vh;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* footer -------- */
+footer {
+    color: white;
+    padding: 1rem 7%;
+    background-color: #000000;
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.yellow {
+    color: #ffaf12;
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* media queries ----------- */
+@media (max-width:1200px) {
+    .boxes {
+        position: relative;
+        top: 0;
+        margin-bottom: -4rem;
+    }
+}
+
+@media (max-width:1050px) {
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 2rem 2.5%;
+    }
+
+    header {
+        padding: 1.2rem 2.5%;
+    }
+
+    footer {
+        padding: 1rem 2.5%;
+    }
+
+    .method-image img {
+        height: 45vh;
+    }
+}
+
+@media (max-width:850px) {
+    #removepopup {
+        top: 20px;
+    }
+}
+
+@media (max-width:750px) {
+    .testimonials-container {
+        flex-direction: column;
+    }
+
+    .method-container {
+        flex-direction: column;
+    }
+
+    .callup-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .callup-image {
+        overflow: hidden;
+    }
+
+    .callup-image img {
+        height: 50vh;
+        transform: scale(1.5);
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .font-50 {
+        font-size: 1rem;
+    }
+
+    .obedience-point p {
+        font-size: 1.3rem;
+    }
+
+    .call-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:560px) {
+    .obedience-point p {
+        font-size: 1.1rem;
+    }
+
+    .homepage-content h3 {
+        font-size: .85rem;
+    }
+
+    .homepage-content h1 {
+        font-size: 2rem;
+    }
+
+    .boxes {
+        gap: 0.5rem;
+    }
+
+    .box {
+        padding: .5rem;
+    }
+
+    .trusted {
+        padding: .5rem 1.7rem;
+    }
+
+    .right form {
+        width: 55vw;
+    }
+
+    .popup .left {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 75%;
+    }
+
+    .homepage {
+        background-position-x: 400px;
+        background-color: #ffaf12;
+        height: 65vh;
+    }
+
+    .call-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .callup-image img {
+        transform: scale(1);
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+    }
+
+    .box {
+        padding: .4rem;
+        font-size: .75rem;
+    }
+
+    .trusted {
+        padding: .5rem 1.4rem;
+    }
+
+    footer .consultation {
+        padding: .5rem;
+        font-size: .9rem;
+    }
+}
+
+@media (max-width:350px) {
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    header .contact-no {
+        padding: .3rem .5rem;
+        font-size: .85rem;
+    }
+}
+
+

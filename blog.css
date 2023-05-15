@@ -1,0 +1,24 @@
+.back>a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: .5rem .7rem;
+    border-radius: 40px;
+}
+
+.back>a:hover {
+    background-color: #ffaf12;
+    color: black;
+}
+
+.blog {
+    color: white;
+}
+
+.blog h1 {
+    color: #ffaf12;
+}
+
+.blog p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
